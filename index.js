@@ -6,3 +6,6 @@ let fuzzyMatch = (drivers, str) => {
     (driver) => driver.toLowerCase().indexOf(str.toLowerCase()) === 0
   );
 };
+
+let matchName = (drivers, str) =>
+  drivers.filter((driver) => driver.name === str);
